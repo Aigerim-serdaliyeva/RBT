@@ -1,0 +1,8 @@
+@import "_mixins/font-face";
+
+@include font-face("Fusion", "../fonts/Fusion/Regular/Fusion", normal);
+@include font-face("HelveticaNeueCyr", "../fonts/HelveticaNeueCyr/Regular/HelveticaNeueCyr-Regular", normal);
+@include font-face("HelveticaNeueCyr", "../fonts/HelveticaNeueCyr/Bold/HelveticaNeueCyr-Bold", bold);
+@include font-face("HelveticaNeueCyr", "../fonts/HelveticaNeueCyr/Light/HelveticaNeueCyr-Light", 300);
+
+
