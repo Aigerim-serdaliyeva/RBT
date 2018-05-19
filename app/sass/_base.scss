@@ -31,6 +31,14 @@ input, button, textarea, a {
     outline: none;
 }
 
+button {
+   cursor: pointer;
+}
+
+h1, h2, h3, h4, h5 {
+   margin: 0;
+}
+
 p {
 	margin: 0 0 1em 0;
 }
@@ -52,12 +60,19 @@ p {
 }
 
 .text {
-    &-center {
-        text-align: center;
-    }
-    &-right {
-        text-align: right;
-    }
+   &-phone {
+      text-decoration: none;
+      white-space: nowrap;
+      cursor: pointer;
+   }
+
+   &-center {
+      text-align: center;
+   }
+
+   &-right {
+      text-align: right;
+   }
 }
 
 .hamburger {
@@ -97,9 +112,8 @@ p {
   
   img {
     position: absolute;
-    top: 21px;
-    left: 20px;
-    transform: translate(-50%, -50%);
+    top: 1;
+    left: 0;
  }
 
   .input {
@@ -114,7 +128,7 @@ p {
     line-height: inherit;
     border: 1px solid #fff;
     font-family: $default_family, sans-serif;
-    padding: 12px 20px 12px 45px;   
+    padding: 11px 10px 11px 45px;   
   
     &.error {
 		border-color: red;
@@ -165,39 +179,40 @@ p {
 	}
 }
 
-.text {
-    &-phone {
-        text-decoration: none;
-        white-space: nowrap;
-        cursor: pointer;
-    }
-
-    &-center {
-        text-align: center;
-    }
-}
-
 .form {
-  text-align: left;
+   background-color: $accent;
+   font-weight: 300;
+   color: #fff;
+   padding: 40px 30px;
 
-  &-info {
-    font-size: 10px;
-  }
+   &-title {
+      font-size: 18px;
+      margin-bottom: 35px;
+   }
 
-  form {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-  }
+   &-info {
+      font-size: 10px;
+      text-align: left;
+      letter-spacing: 0;
+   }
 
-  .input-div {
-    margin-right: 20px;
-  }
+   form {
+      max-width: 263px;
+      margin: 0 auto;
+   }
+   
+   .input-div {
+      margin-bottom: 10px;
+   }
 
-  .input-div, .button {
-    margin-bottom: 10px;
-  }
+   .button {
+      background-color: #fff;
+      color: #000 !important;
+      width: 100%;
+      margin-bottom: 15px;
+   }
 }
+
 
 
 

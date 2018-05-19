@@ -171,6 +171,19 @@ $(document).ready(function() {
          480: { items: 2, mouseDrag: true },
          768: { items: 3 }
       },
+      onInitialized: function() {
+         equalizeHeight('.block-carousel', '.block');
+      }
+   });
+
+   $(".reviews-carousel").owlCarousel({
+      nav: true,
+      dots: false,
+      loop: true,
+      smartSpeed: 500,
+      margin: 30,
+      navText: ['', ''],
+      items: 1
    });
    
 
@@ -179,6 +192,20 @@ $(document).ready(function() {
    });
 
 });
+
+function equalizeHeight(container, column) {
+   $(container).each(function(){        
+      var highestBox = 0;
+      
+      $(column, this).each(function(){        
+        if($(this).height() > highestBox) {
+          highestBox = $(this).height(); 
+        }      
+      });  
+
+      $(column, this).height(highestBox);                    
+   }); 
+}
 
 function validateEmail(email) {
     var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;

@@ -57,9 +57,8 @@
       &-dot {
          width: 15px;
          height: 16px;
-         background: transparent !important;
          margin: 0 5px;
-         background-color: #d53801;
+         background-color: #d53801 !important;
 
          &.active {
             background: #e2734d !important;
