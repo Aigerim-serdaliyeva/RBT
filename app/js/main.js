@@ -143,7 +143,6 @@ $(document).ready(function() {
         }
     });
 
-
     $(".marka-carousel").owlCarousel({
       nav: true,
       dots: false,
@@ -189,6 +188,7 @@ $(document).ready(function() {
 
    $(".answer-button").click( function() {
       $(this).parent().toggleClass("active");
+      $(this).next().slideToggle();
    });
 
 });

@@ -89,21 +89,33 @@ p {
    display: inline-block;
    text-decoration: none;
    background-color: $accent;
-   padding: 13px 10px;
+   padding: 12px 10px;
    font-size: 14px;
    line-height: 1;
    font-weight: normal;
    text-align: center;
    color: #fff !important;
-   border: 0;
+   border: 1px solid $accent;
    cursor: pointer;
 
    &:hover {
-      color: #000;
+      color: #000 !important;
+      background-color: #fff !important;
    }    
 
    &:active {
     top: 1px;
+   }
+
+   &-white {
+      background-color: #fff;
+      color: #000 !important;
+      border-color: #fff !important;
+
+      &:hover {
+         background-color: $accent !important;
+         color: #fff !important;
+      }
    }
 }
 
@@ -123,7 +135,7 @@ p {
 
 .input, .textarea {
     background: transparent;
-    color: #000;
+    color: #fff;
     font-size: 14px;
     line-height: inherit;
     border: 1px solid #fff;
@@ -143,7 +155,7 @@ p {
     display: none;
     text-align: left;
     color: red;
-    padding-left: 35px;
+    padding-left: 45px;
     margin-top: 5px;
 	}
 
@@ -151,17 +163,16 @@ p {
     color: #fff;
     font-weight: 300;
       opacity: 1;
-      font-size: 14px;
 	}
 	
 	&::-moz-placeholder {
-    color: #828181;
+    color: #fff;
     font-weight: 300;
 		opacity: 1;
 	}
 	
 	&:-ms-input-placeholder {
-    color: #828181;
+    color: #fff;
     font-weight: 300;
 		opacity: 1;
 	}
@@ -177,6 +188,10 @@ p {
 	&.error:-ms-input-placeholder {
 		color: red;
 	}
+}
+
+.textarea {
+   padding: 11px 10px;  
 }
 
 .form {
@@ -206,10 +221,55 @@ p {
    }
 
    .button {
-      background-color: #fff;
-      color: #000 !important;
       width: 100%;
       margin-bottom: 15px;
+   }
+
+   &-hascontent {
+      padding: 20px;
+
+      form {
+         max-width: none;
+      }
+
+      .form-title {
+         text-align: left;
+         margin-bottom: 20px;
+      }
+   }
+
+   &-content {
+      display: flex;
+      margin-bottom: 15px;
+
+      .textarea {
+         flex-grow: 1;
+      }
+
+      .input-div {
+         &:last-child {
+            margin-bottom: 0;
+         }
+      }
+
+   }
+
+   &-inputs {
+      width: 262px;
+      margin-right: 20px;
+   }
+
+   &-button {
+      display: flex;
+      justify-content: space-between;
+
+      .button {
+         width: 180px;
+      }
+
+      .form-info {
+         margin-top: 8px;
+      }
    }
 }
 

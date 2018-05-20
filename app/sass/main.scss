@@ -92,8 +92,9 @@ body {
 }
 
 .footer {
-    background-color: #7f7f7f;
+    background-color: $gray;
     color: #fff;
+
     &-content {
       display: flex;
       flex-wrap: wrap;
@@ -101,8 +102,14 @@ body {
       align-items: flex-start;
       padding: 20px 0;
    }
-   .logo {
-   }    
+
+   &-title {
+      display: inline-block;
+      background-color: #f2f2f2;
+      color: #000;
+      padding: 2px 3px;
+      margin-bottom: 8px;
+   }
 
     &-address {
        margin-right: 50px;
@@ -124,8 +131,6 @@ body {
 
     .button {
        margin-right: 50px;
-       background-color: #fff;
-       color: #000 !important;
     }
 }
 
@@ -140,12 +145,14 @@ body {
    }
 
    li {
-      margin: 0px 25px;
+      margin: 0px 25px 0 0;
+      &.last {
+         margin-right: 0;
+      }
    }
 
    a {
       display: inline-block;
-      // line-height: 1.5;
       text-decoration: none;
       font-weight: normal;
       color: #fff;
@@ -163,16 +170,6 @@ body {
       }
    }
 }
-
-.button-white {
-   font-size: 14px;
-   background-color: #fff;
-   color: #000 !important;
-   padding: 14px;
-   margin-bottom: 15px;
-   width: 100%;
-}
-
 
 
 .section {
@@ -232,6 +229,7 @@ body {
             content: "";
             position: absolute;
             background-image: url('../img/main-back.jpg');
+            background-size: cover;
             top: 0;
             left: -1000px;
             bottom: 0;
@@ -324,11 +322,7 @@ body {
             }
          }
          
-         &-button {
-            border: none;
-            background-color: #fff;
-            padding: 10px 20px;
-            font-size: 14px;
+         .button {
             position: absolute;
             bottom: 42px;
          }
@@ -360,8 +354,14 @@ body {
     }
 
     &-reviews {     
-      background-image: url('../img/reviews-back.jpg');
-      padding-bottom: 0;
+      padding: 0;
+      background-color: $gray;
+
+      &-content {
+         padding: 40px 0 0;
+         background-image: url('../img/reviews-back.jpg');
+         background-size: cover;
+      }
 
       .section-title {
          background-color: #f0f0f0;
@@ -453,7 +453,7 @@ body {
     }
 
     &-form {
-      background-color: #7f7f7f;
+      background-color: $gray;
       padding: 0;
 
       &-content {
@@ -619,19 +619,22 @@ body {
           display: flex;
           justify-content: space-between;
        }
+
        .answers {
-          width: 49%;
+         width: 49%;
          &-title {
             font-size: 18px;
             text-align: left;
             margin-bottom: 20px;
          }  
-          &-form {
-             width: 49%;
-          }
+         &-form {
+            width: 49%;
+         }
        }
-       .answer {          
+
+      .answer {          
          margin-bottom: 5px;
+
          &-button {
             padding: 10px 38px 10px 20px;
             text-align: left;
@@ -639,58 +642,37 @@ body {
             font-size: 18px;
             color: #fff;
             position: relative;
+            cursor: pointer;
+
+            &:after {
+               content: "";
+               position: absolute;
+               background-image: url('../img/plus.png');
+               top: 50%;
+               right: 8px;
+               margin-top: -12.5px;
+               width: 25px;
+               height: 25px;
+               background-repeat: no-repeat;
+               background-position: center center;
+            }
          }
-         &-plus {
-            position: absolute;
-            background-image: url('../img/plus.png');
-            top: 0;
-            right: 8px;
-            bottom: 0;
-            width: 25px;
-            background-repeat: no-repeat;
-            background-position: center center;
-         }
+         
          &-text {
             background-color: #e6e6e6;
             padding: 12px 22px;
             text-align: left;
          }
-       }
 
-       .section-main-form {
-          width: 100%;
-         padding: 20px;
-          &-title {
-             max-width: none;
-             text-align: left;
-             margin-bottom: 20px;
-          }
-          &-content {
-             display: flex;
-             justify-content: space-between;
-             margin-bottom: 15px;
-          }
-          form {
-             padding: 0;
-             width: 262px;
-          }
-          .textarea {
-             width: 235px;
-             padding: 15px;
-             color: #fff;
-          }
-          .input-phone {
-             margin-bottom: 0;
-          }
-
-          &-button {
-            display: flex;
-            justify-content: space-between;
-            .button {
-               width: 180px;
+         &.active {
+            .answer-button {
+               &:after {
+                  background-image: url('../img/minus.png');
+               }
             }
-          }
+         }
        }
+
     }
 
 }
