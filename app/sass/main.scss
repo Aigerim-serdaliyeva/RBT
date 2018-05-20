@@ -493,10 +493,7 @@ body {
     }
 
     &-block1 {
-       &-content {
-          display: flex;
-          align-items: flex-start;
-       }
+      padding-top: 70px;
        &-title {
           font-size: 30px;
           margin-bottom: 30px;
@@ -510,30 +507,35 @@ body {
           &-content {
              padding: 0 25px;
           }
+          &-img {
+             padding: 0 20px 0 0;
+             float: left;
+          }
           &-text {
              margin-bottom: 23px;
              span {
-                font-size: 18px;
+                font-size: 24px;
                 color: $accent;
+             }
+             &-2 {
+                font-size: 16px;
+                margin-bottom: 15px;
+             }
+          }
+          &-podgotovka {
+             &-title {
+                font-size: 16px;
+                color: $accent;
+                margin-bottom: 20px;
              }
           }
        }
-       .form {
-          max-width: 945px;
-          margin: 0 auto;
-          background-color: $accent;
-          padding: 15px 45px;
-          &-title {
-             font-size: 18px;
-             margin-bottom: 15px;
-          }
-          .input-div, .button {
-             width: 265px;
-          }
-          .button {
-             padding: 13.5px 5px;
-          }
-       }
+      .form2 {
+         background-color: $accent;
+         padding: 10px 40px;
+         max-width: 980px;
+      }
+     
     }
 
     &-contact {
