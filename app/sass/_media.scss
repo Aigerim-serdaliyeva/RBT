@@ -4,14 +4,6 @@
     display: none !important;
 }
 
-@media only screen and (max-width : 1790px) {
-   #thanks-page {
-      .page-wrapper {
-         background-position: left top;
-      }   
-   }
-}
-
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1199px) {
 
@@ -142,15 +134,6 @@
 
 }
 
-@media only screen and (max-width : 880px) { 
-  .more {
-    .form {
-      padding-left: 10px;
-      padding-right: 10px;
-    }
-  }
-}
-
 /* Small Devices, Tablets */
 @media only screen and (max-width : 767px) {
 
@@ -178,40 +161,48 @@
    }
 
    .more {
-     &-img {
-       margin-right: 30px;
-     }
-     .form {       
-        form {
-          margin: 0 auto;
-          max-width: 500px;
-          flex-direction: column;
-        }
+      &-text {
+         position: static;
+         margin: 0 0 5px !important;
 
-        &-info {
-          margin: 0 auto;
-          max-width: 500px;          
-        }
+         &-num {
+            display: inline-block;
+         }
+      }
 
-        .input-div, .button {
-          max-width: none;
-          width: 100%;
-        }
-     }
+      &-img {
+         display: none;
+      }
+
+      &-img2 {
+         display: block;
+         margin-bottom: 15px;
+      }
+
+      &-1 {
+         .more-block {
+            max-width: 367px;
+         }
+      }
    }
 
-}
+   .form2 {
+      form {
+         flex-direction: column;
+         max-width: 500px;
+         margin: 0 auto;
+      }
 
-@media only screen and (max-width : 640px) {
-  .more {
-    &-content {
-       flex-direction: column;         
-    }
+      .input-div, .button {
+         width: 100%;
+      }
 
-    &-img {
-      margin: 0 auto;
+      .form-info {
+         max-width: 500px;
+         margin: 0 auto;
+      }
    }
- }
+
 }
 
 /* Extra Small Devices, Phones */

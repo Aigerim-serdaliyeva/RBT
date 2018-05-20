@@ -273,6 +273,32 @@ p {
    }
 }
 
+.form2 {
+   max-width: 850px;
+   margin: 0 auto;   
+   
+   &-accent {
+      // background-color: $accent;
+      // max-width: 100%;
+   }
+
+   .button {
+      margin-bottom: 10px;
+   }
+
+   form {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+   }
+ 
+   .input-div {
+      flex-grow: 1;
+      // width: 265px;
+      margin: 0 20px 10px 0;
+   }
+ }
+
 
 
 
