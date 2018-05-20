@@ -136,11 +136,12 @@ body {
 
 .main-menu {   
    background-color: rgba(3, 94, 133, 0.5);
+
    ul {
       list-style: none;
       display: flex;
       justify-content: flex-start;
-      margin: 0 0 0 281px;
+      margin: 0 0 0 220px;
    }
 
    li {
@@ -632,7 +633,7 @@ body {
          }
 
          &-img {
-             margin: 0 20px 0px 0;
+             margin: 0 20px 10px 0;
              float: left;
           }
 
