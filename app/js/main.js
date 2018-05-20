@@ -158,7 +158,7 @@ $(document).ready(function() {
       },
    });
 
-   $(".block-carousel").owlCarousel({
+   $(".blog-carousel").owlCarousel({
       nav: false,
       dots: true,
       loop: true,
@@ -171,7 +171,7 @@ $(document).ready(function() {
          768: { items: 3 }
       },
       onInitialized: function() {
-         equalizeHeight('.block-carousel', '.block');
+         equalizeHeight('.blog-carousel', '.blog');
       }
    });
 

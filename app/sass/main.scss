@@ -465,7 +465,7 @@ body {
       }
     }
 
-    &-block {
+    &-blog {
        .section-title {
           margin-bottom: 20px;
        }
@@ -474,7 +474,7 @@ body {
           margin-bottom: 30px;
        }
 
-      .block {
+      .blog {
          display: flex;
          flex-direction: column;
          max-width: 360px;
@@ -637,21 +637,18 @@ body {
              float: left;
           }
 
-          &-text {
+         &-2 {
+            font-size: 16px;
+            margin-bottom: 18px;
+         }
 
-            //  &-2 {
-            //     font-size: 16px;
-            //     margin-bottom: 15px;
-            //  }
+          &-podgotovka {
+             &-title {
+                font-size: 16px;
+                color: $accent;
+                margin-bottom: 20px;
+             }
           }
-
-         //  &-podgotovka {
-         //     &-title {
-         //        font-size: 16px;
-         //        color: $accent;
-         //        margin-bottom: 20px;
-         //     }
-         //  }
        }
 
       .form2 {
