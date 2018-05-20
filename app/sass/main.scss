@@ -135,7 +135,6 @@ body {
 }
 
 .main-menu {   
-   margin-top: -1px;
    background-color: rgba(3, 94, 133, 0.5);
    ul {
       list-style: none;
@@ -713,6 +712,34 @@ body {
    }
 }
 
+.modal {
+   text-align: center;
+   background-color: $accent;
+   color: #fff;
+
+   &-title {
+     font-size: 20px;
+     margin-bottom: 30px;
+   }
+
+   .remodal-close {
+      color: #fff;
+   }
+ 
+   form {
+     margin: 0 auto;
+     width: 265px;
+   }
+ 
+   .input-div {
+     margin-bottom: 10px;
+   }
+ 
+   .button {
+     width: 100%;
+     margin: 10px 0;
+   }
+ }
 
 .more {
    max-width: 1050px;

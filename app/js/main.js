@@ -161,7 +161,7 @@ $(document).ready(function() {
    $(".blog-carousel").owlCarousel({
       nav: false,
       dots: true,
-      loop: true,
+      loop: false,
       smartSpeed: 500,
       margin: 30,
       navText: ['', ''],
