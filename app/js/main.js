@@ -6,10 +6,8 @@ $(document).ready(function() {
     var $header = $(".header");
     var $menu = $(".main-menu");
     var utms = parseGET();
-    var headerHeight = 57;
+    var headerHeight = 120;
     var $hamburger = $(".hamburger");
-    var sfer = $('[data-remodal-id="obsudit-sodrudni4estvo"]').remodal();
-    var $sfer = $('[data-remodal-id="obsudit-sodrudni4estvo"]');
 
     if(utms && Object.keys(utms).length > 0) {
         window.sessionStorage.setItem('utms', JSON.stringify(utms));
@@ -19,7 +17,7 @@ $(document).ready(function() {
 
     if($wnd.width() < 992) {
         headerHeight = 105;
-    }
+    }    
 
     $wnd.scroll(function() { onscroll(); });
 
@@ -161,7 +159,7 @@ $(document).ready(function() {
    $(".blog-carousel").owlCarousel({
       nav: false,
       dots: true,
-      loop: true,
+      loop: false,
       smartSpeed: 500,
       margin: 30,
       navText: ['', ''],
