@@ -839,6 +839,47 @@ body {
 
          &-text {
             &-right, &-right + .more-num {
+               margin-left: 155px;
+            }
+      
+            &-left, &-left + .more-num {
+               margin-right: 155px;
+            }
+
+            &-1, &-1 + .more-num {
+               top: 15px;
+            }
+            &-2, &-2 + .more-num {
+               top: 85px;
+            }
+            &-3, &-3 + .more-num {
+               top: 170px;
+            }
+            &-4, &-4 + .more-num {
+               top: 260px;
+            }
+            &-5, &-5 + .more-num {
+               top: 40px;
+            }
+            &-6, &-6 + .more-num {
+               top: 80px;
+            }
+            &-7, &-7 + .more-num {
+               top: 185px;
+            }
+         }
+      }
+   } 
+
+   &-2 {
+      .more {
+         &-block {
+            max-width: 870px;
+            width: 100%;
+         }
+
+         &-text {
+            &-right, &-right + .more-num {
                margin-left: 180px;
             }
       
@@ -872,38 +913,49 @@ body {
             }
          }
       }
-   }   
+   } 
 
-   &-block2 {
-      &-text1 {
-         left: -80px;
-         top: 55px;
+   &-3 {
+      .more {
+         &-block {
+            max-width: 870px;
+            width: 100%;
+         }
+
+         &-text {
+            &-right, &-right + .more-num {
+               margin-left: 225px;
+            }
+      
+            &-left, &-left + .more-num {
+               margin-right: 225px;
+            }
+
+            &-1, &-1 + .more-num {
+               top: 55px;
+            }
+            &-2, &-2 + .more-num {
+               top: 125px;
+            }
+            &-3, &-3 + .more-num {
+               top: 208px;
+            }
+            &-4, &-4 + .more-num {
+               top: 265px;
+            }
+            &-5, &-5 + .more-num {
+               top: 35px;
+            }
+            &-6, &-6 + .more-num {
+               top: 120px;
+            }
+            &-7, &-7 + .more-num {
+               top: 210px;
+            }
+         }
       }
-      &-text2 {
-         left: -130px;
-         top: 125px;
-      }
-      &-text3 {
-         left: -110px;
-         top: 207px;
-      }
-      &-text4 {
-         left: -80px;
-         top: 265px;
-      }
-      &-text5 {
-         right: -260px;
-         top: 40px;
-      }
-      &-text6 {
-         right: -170px;
-         top: 120px;
-      }
-      &-text7 {
-         right: -195px;
-         top: 207px;
-      }
-   }  
+   }
+    
 }
 
 @import './_media';

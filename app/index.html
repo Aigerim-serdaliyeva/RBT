@@ -61,12 +61,12 @@
             <div class="container">
                <ul>
                   <li><a class="link" href="#main">Главная</a></li>
-                  <li><a class="link" href="#">О компании</a></li>
-                  <li><a class="link" href="#">Услуги</a></li>
-                  <li><a class="link" href="#">Отзывы</a></li>
-                  <li><a class="link" href="#">Блог</a></li>							
+                  <li><a class="link" href="#why">О компании</a></li>
+                  <li><a class="link" href="#srok">Услуги</a></li>
+                  <li><a class="link" href="#review">Отзывы</a></li>
+                  <li><a class="link" href="#block">Блог</a></li>							
                   <li><a class="link" href="#contact">Контакты</a></li>							
-                  <li class="last"><a class="link" href="#">Ответы на вопросы</a></li>							
+                  <li class="last"><a class="link" href="#answer">Ответы на вопросы</a></li>							
                   <li class="visible-xs visible-sm"><a href="tel:+77273273573" class="text-phone">+7 (727) 327-35-73</a></li>
                   <li class="visible-xs visible-sm"><a href="tel:+77780999346" class="text-phone">+7 778 099-93-46</a></li>
                   <li class="visible-xs visible-sm"><a href="tel:+77073499936" class="text-phone">+7 707 349-99-36</a></li>
@@ -121,7 +121,7 @@
          </div>
       </section>   
       
-      <section class="section section-why">
+      <section class="section section-why" id="why">
          <div class="container">
             <div class="section-why-content">
                <h3 class="why-title">Почему "RBT Master" - лучший в своем деле?</h3>
@@ -174,7 +174,7 @@
          </div>
       </section>
 
-      <section class="section section-srok">
+      <section class="section section-srok" id="srok">
          <div class="container">
             <h2 class="section-title">Отремонтируем Вашу технику в самые короткие сроки</h2>
             <div class="section-srok-content">
@@ -251,7 +251,7 @@
          </div>
       </section>
 
-      <section class="section section-reviews">
+      <section class="section section-reviews" id="review">
          <div class="container">
             <div class="section-reviews-content">
                <div class="section-title">Отзывы о RBT Master</div>
@@ -334,14 +334,14 @@
                   <h4 class="correct-title">Устраним причину поломки <br>
                         Вашей стиральной машины</h4>
                   <button class="button" data-remodal-target="more-modal-2">Посмотреть признаки поломки <br>
-                        холодильника</button>
+                     стиральной машины</button>
                </div>
                <div class="correct">
                   <img src="./img/correct-3.jpg" alt="">
                   <h4 class="correct-title">После ремонта Ваша посудомоечная машина <br>
                         снова начнет работать идеально </h4>
                   <button class="button" data-remodal-target="more-modal-3">Посмотреть признаки поломки <br>
-                        холодильника</button>
+                     посудомоечной машины</button>
                </div>
             </div>
          </div>
@@ -376,7 +376,7 @@
          </div>
       </section>
 
-      <section class="section section-block">
+      <section class="section section-block" id="block">
          <div class="container">
             <div class="section-title">
                Блог "RBT Master"
@@ -490,7 +490,7 @@
          </div>         
       </div>
 
-      <section class="section section-contact">
+      <section class="section section-contact" id="contact">
          <div class="container">
             <div class="section-contact-content">
                <div class="map">
@@ -517,7 +517,7 @@
          </div>
       </section>
 
-      <section class="section section-answers">
+      <section class="section section-answers" id="answer">
          <div class="container">
             <div class="section-title">
                Ответы на вопросы
@@ -729,6 +729,50 @@
      
    <div class="remodal more more-1" data-remodal-id="more-modal-1" data-remodal-options="hashTracking: true">
       <button data-remodal-action="close" class="remodal-close"></button>   
+      <div class="more-title"> Устраним такие признаки поломки посудомоечной машины</div>
+      <div class="more-content">         
+         <div class="more-block">
+            <img class="more-img" src="./img/xolodilnik.jpg" alt="">
+            <img class="more-img2" src="./img/xolodilnik-2.jpg" alt="">
+            <div class="more-text more-text-left more-text-1"><span class="more-text-num">1</span>Стуки, гул, дребезжание и прочие
+               подозрительные звуки</div>
+            <div class="more-text more-text-left more-text-2"><span class="more-text-num">2</span> Отсутствие охлаждения при
+               работающем / неработающем компрессоре</div>
+            <div class="more-text more-text-left more-text-3"><span class="more-text-num">3</span>Подтекание воды</div>
+            <div class="more-text more-text-left more-text-4"><span class="more-text-num">4</span>Другие признаки</div>
+            <div class="more-text more-text-right more-text-5"><span class="more-text-num">5</span>Внутри не горит свет</div>
+            <div class="more-text more-text-right more-text-6"><span class="more-text-num">6</span>Слишком сильное или слабое охлаждение</div>
+            <div class="more-text more-text-right more-text-7"><span class="more-text-num">7</span>Намерзшая "шуба" в морозильнике</div>
+         </div>
+      </div>
+      <div class="more-footer">
+         <div class="form2">
+            <div class="form-title inverse">Закажите обратный звонок, и в течение 1 часа к Вам приедет мастер и проведет диагностику поломки бесплатно!</div>
+   
+            <form action="/mail.php" method="post">
+               <input type="hidden" name="info" value="Получить прайс-лист оптовых цен">
+               <div class="input-div">
+                  <img src="./img/name-icon.png" alt="" class="form-icon">
+                  <input type="text" class="input" name="name" placeholder="Имя">
+               </div>
+               
+               <div class="input-div">
+                  <img src="./img/phone-icon.png" alt="" class="form-icon">
+                  <input type="tel" class="input" name="phone" placeholder="Номер телефона*" required>
+                  <span class="error-message">Заполните это поле</span>
+               </div>
+   
+               <button class="button ajax-submit button-white" type="submit" id="polu4it_prais_list">Получить бесплатную диагностику</button>
+               
+            </form>
+            <div class="form-info inverse">*Ваши данные в безопасности и не будут переданы  третьим лицам</div>
+         </div>         
+      </div>
+
+   </div>
+
+   <div class="remodal more more-2" data-remodal-id="more-modal-2" data-remodal-options="hashTracking: true">
+      <button data-remodal-action="close" class="remodal-close"></button>   
       <div class="more-title"> Устраним такие признаки поломки стиральной машины</div>
       <div class="more-content">         
          <div class="more-block">
@@ -770,45 +814,48 @@
 
    </div>
 
-   <div class="remodal more" data-remodal-id="more-modal-2" data-remodal-options="hashTracking: true">
+   <div class="remodal more more-3" data-remodal-id="more-modal-3" data-remodal-options="hashTracking: true">
       <button data-remodal-action="close" class="remodal-close"></button>   
       <div class="more-title"> Устраним такие признаки поломки посудомоечной машины</div>
-      <div class="more-content">
-         
-         <div class="more-block2">
-            <img src="./img/posuda.png" alt="">
-            <div class="more-block2-text1">Вода переливается</div>
-            <div class="more-block2-text2">Посторонний шум</div>
-            <div class="more-block2-text3">Не происходит слив воды</div>
-            <div class="more-block2-text4">Другие признаки</div>
-            <div class="more-block2-text5">Стиральная машина не забирает моющее средство</div>
-            <div class="more-block2-text6">Мытье посуды не запускается</div>
-            <div class="more-block2-text7">Перегрев или недогрев воды</div>            
+      <div class="more-content">         
+         <div class="more-block">
+            <img class="more-img" src="./img/posuda.jpg" alt="">
+            <img class="more-img2" src="./img/posuda-2.jpg" alt="">
+            <div class="more-text more-text-left more-text-1"><span class="more-text-num">1</span>Вода переливается</div>
+            <div class="more-text more-text-left more-text-2"><span class="more-text-num">2</span>Посторонний шум</div>
+            <div class="more-text more-text-left more-text-3"><span class="more-text-num">3</span>Не происходит слив воды</div>
+            <div class="more-text more-text-left more-text-4"><span class="more-text-num">4</span>Другие признаки</div>
+            <div class="more-text more-text-right more-text-5"><span class="more-text-num">5</span>Стиральная машина не забирает моющее средство</div>
+            <div class="more-text more-text-right more-text-6"><span class="more-text-num">6</span>Мытье посуды не запускается</div>
+            <div class="more-text more-text-right more-text-7"><span class="more-text-num">7</span>Перегрев или недогрев воды</div>
          </div>
       </div>
-      <div class="form">
-         <div class="form-title inverse">Закажите обратный звонок, и в течение 1 часа к Вам приедет мастер и проведет диагностику поломки бесплатно!</div>
-
-         <form action="/mail.php" method="post">
-            <input type="hidden" name="info" value="Получить прайс-лист оптовых цен">
-            <div class="input-div">
-               <img src="./img/name-icon.png" alt="" class="form-icon">
-               <input type="text" class="input" name="name" placeholder="Имя">
-            </div>
-            
-            <div class="input-div">
-               <img src="./img/phone-icon.png" alt="" class="form-icon">
-               <input type="tel" class="input" name="phone" placeholder="Номер телефона*" required>
-               <span class="error-message">Заполните это поле</span>
-            </div>
-
-            <button class="button ajax-submit button-white" type="submit" id="polu4it_prais_list">Получить бесплатную диагностику</button>
-            
-         </form>
-         <div class="form-info inverse">*Ваши данные в безопасности и не будут переданы  третьим лицам</div>
+      <div class="more-footer">
+         <div class="form2">
+            <div class="form-title inverse">Закажите обратный звонок, и в течение 1 часа к Вам приедет мастер и проведет диагностику поломки бесплатно!</div>
+   
+            <form action="/mail.php" method="post">
+               <input type="hidden" name="info" value="Получить прайс-лист оптовых цен">
+               <div class="input-div">
+                  <img src="./img/name-icon.png" alt="" class="form-icon">
+                  <input type="text" class="input" name="name" placeholder="Имя">
+               </div>
+               
+               <div class="input-div">
+                  <img src="./img/phone-icon.png" alt="" class="form-icon">
+                  <input type="tel" class="input" name="phone" placeholder="Номер телефона*" required>
+                  <span class="error-message">Заполните это поле</span>
+               </div>
+   
+               <button class="button ajax-submit button-white" type="submit" id="polu4it_prais_list">Получить бесплатную диагностику</button>
+               
+            </form>
+            <div class="form-info inverse">*Ваши данные в безопасности и не будут переданы  третьим лицам</div>
+         </div>         
       </div>
 
    </div>
+
 										
 	<link rel="stylesheet" href="./css/libs.min.css">
 	<link rel="stylesheet" href="./css/main.min.css">
