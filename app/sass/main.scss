@@ -490,53 +490,7 @@ body {
             width: 100%;
          }
        }
-    }
-
-    &-block1 {
-      padding-top: 70px;
-       &-title {
-          font-size: 30px;
-          margin-bottom: 30px;
-       }
-       &-link {
-         color: $accent;
-         font-size: 16px;
-         border-bottom: 1px solid $accent;
-       }
-       .block1 {
-          &-content {
-             padding: 0 25px;
-          }
-          &-img {
-             padding: 0 20px 0 0;
-             float: left;
-          }
-          &-text {
-             margin-bottom: 23px;
-             span {
-                font-size: 24px;
-                color: $accent;
-             }
-             &-2 {
-                font-size: 16px;
-                margin-bottom: 15px;
-             }
-          }
-          &-podgotovka {
-             &-title {
-                font-size: 16px;
-                color: $accent;
-                margin-bottom: 20px;
-             }
-          }
-       }
-      .form2 {
-         background-color: $accent;
-         padding: 10px 40px;
-         max-width: 980px;
-      }
-     
-    }
+    }    
 
     &-contact {
        &-content {
@@ -654,6 +608,61 @@ body {
 
     }
 
+    &-sovet {
+      padding-top: 70px;
+
+       &-title {
+          font-size: 30px;
+          margin-bottom: 30px;
+       }
+
+       &-link {
+         display: inline-block;
+         color: $accent;
+         font-size: 16px;
+         border-bottom: 1px solid $accent;
+         margin-bottom: 30px;
+       }
+
+       .sovet {
+         margin-bottom: 18px;
+         
+         span {
+            font-size: 24px;
+            color: $accent;
+         }
+
+         &-img {
+             margin: 0 20px 0px 0;
+             float: left;
+          }
+
+          &-text {
+
+            //  &-2 {
+            //     font-size: 16px;
+            //     margin-bottom: 15px;
+            //  }
+          }
+
+         //  &-podgotovka {
+         //     &-title {
+         //        font-size: 16px;
+         //        color: $accent;
+         //        margin-bottom: 20px;
+         //     }
+         //  }
+       }
+
+      .form2 {
+         background-color: $accent;
+         padding: 10px 40px;
+         max-width: 980px;
+         margin: 35px auto 20px;
+      }
+     
+    }
+
 }
 
 #thanks-page {
@@ -707,76 +716,6 @@ body {
    }
 }
 
-.modal {
-  text-align: center;
-  background-color: $accent;
-  color: #fff;
-
-  &[data-remodal-id="obsudit-sodrudni4estvo"] {
-    padding-bottom: 20px;
-  }
-
-  &-title {
-    font-size: 20px;
-    margin-bottom: 30px;
-  }
-
-  form {
-    margin: 0 auto;
-    width: 265px;
-  }
-
-  .input-div {
-    margin-bottom: 10px;
-  }
-
-  .button {
-    width: 100%;
-    margin: 10px 0;
-  }
-
-  &[data-remodal-id="zadat-vopros"] {
-    padding-bottom: 20px;
-    max-width: 750px;
-    background-image: url('../img/remodal-back.png');
-    
-    form {
-      width: auto;
-      max-width: 535px;
-      margin: 0 auto;
-    }
-
-    .textarea {
-      flex-grow: 1;
-      resize: none;
-    }
-
-    .input-div {
-      &:last-child {
-        margin-bottom: 0;
-      }
-    }
-  }
-
-  &-form {
-    display: flex;
-    margin-bottom: 5px;
-  }
-
-  &-left {
-    margin-right: 20px;
-  }
-
-  &-footer {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
-    .button {
-      width: auto;
-    }
-  }
-}
 
 .more {
    max-width: 1050px;
