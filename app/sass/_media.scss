@@ -27,7 +27,15 @@
       }
    }
 
-   .section {    
+   .section {  
+      &-main {
+         &-block {
+            &::before {
+               left: calc(-50vw + 470px);
+            }
+         }
+      }  
+
       &-contact {
          .contact {
             width: calc((100% - 940px)/2 + 490px);
@@ -128,9 +136,12 @@
             font-size: 36px !important;
          }
          &-block {
+            &:before {
+               left: 0;
+            }
             width: 100%;
             margin-bottom: 20px;
-            padding: 50px 0;
+            padding: 50px 15px;
          }
       }
 

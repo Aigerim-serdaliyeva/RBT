@@ -231,7 +231,7 @@ body {
             background-image: url('../img/main-back.jpg');
             background-size: cover;
             top: 0;
-            left: -1000px;
+            left: calc(-50vw + 570px);
             bottom: 0;
             right: 0;
             z-index: -1;
