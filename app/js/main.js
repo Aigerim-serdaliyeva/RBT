@@ -16,7 +16,7 @@ $(document).ready(function() {
     }
 
     if($wnd.width() < 992) {
-        headerHeight = 105;
+        headerHeight = 82;
     }    
 
     $wnd.scroll(function() { onscroll(); });
