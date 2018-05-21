@@ -18,7 +18,11 @@
    }
 
    .section {    
-      
+      &-contact {
+         .contact {
+            width: calc((100% - 940px)/2 + 490px);
+         }
+      }
    }
 
 }
@@ -145,24 +149,14 @@
                margin: 0 auto;
             }
          }
-      }
+      }      
 
       &-contact {
-         &-content {
-            flex-direction: column;
-         }
-         
-         .map {
-            width: 100%;
-            margin-bottom: 20px;
-         }
          .contact {
-            width: 100%;
+            width: calc((100% - 720px)/2 + 400px);
+
             &-block {
-               &-content {
-                  max-width: none;
-                  margin: 0 auto 25px;
-               }
+               width: 400px;
             }
          }
       }
@@ -290,6 +284,32 @@
             &-img {
                width: 360px;
                margin: 0 auto 10px;
+            }
+         }
+      }
+
+      &-contact {
+         .container {
+            padding-left: 15px;
+            padding-right: 15px;
+         }
+
+         &-content {
+            flex-direction: column;
+         }
+         
+         .map {
+            width: 100%;
+            margin-bottom: 20px;
+         }
+         .contact {
+            width: 100%;
+            &-block {
+               width: 100%;
+               &-content {
+                  max-width: none;
+                  margin: 0 auto 25px;
+               }
             }
          }
       }
@@ -474,17 +494,18 @@
       &-contact {         
          .contact {
             &-block {
+               padding: 15px 15px 30px;
                text-align: center;
                &-content {
-                  flex-direction: column;
+                  flex-direction: column;                  
                }
-               .button {
-                  width: 100%;
+               &-text {
+                  text-align: center;
                }
             }
             
             &-text {
-               margin-bottom: 10px;
+               margin: 10px 0;
             }
          }
       }
