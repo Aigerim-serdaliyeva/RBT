@@ -175,12 +175,15 @@ $(document).ready(function() {
 
    $(".reviews-carousel").owlCarousel({
       nav: true,
-      dots: false,
       loop: true,
       smartSpeed: 500,
       margin: 30,
       navText: ['', ''],
-      items: 1
+      items: 1,
+      responsive: {
+         0: { dots: true, nav: false, mouseDrag: false },
+         480: { dots: false, nav: true, mouseDrag: true },
+      }
    });
    
 

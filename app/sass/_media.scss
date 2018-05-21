@@ -221,6 +221,35 @@
       &-reviews {
          .review {
             &-img {
+               display: none !important;
+            }
+
+            &-content, &-author, &-text, &-answer {
+               position: static;
+            }
+
+            &-content {
+               text-align: right;
+               background-color: #ede6dc;
+            }
+
+            &-author {
+               background-color: #046158;
+               text-align: left;
+               padding: 10px 30px;
+            }
+
+            &-text {
+               margin: 10px 30px;
+               background-color: #fff;
+               padding: 8px 15px;
+            }
+
+            &-answer {
+               display: inline-block;
+               padding: 7px 15px;
+               background-color: #e1edc3;
+               margin: 0 30px 10px;
             }
          }
       }
@@ -309,11 +338,6 @@
       }
    }
 
-   //  .button {
-   //      width: 100%;
-   //      min-width: auto;
-   //  }
-
 	.col-xxs-12 {
 		width: 100%;
 	}
@@ -351,6 +375,26 @@
       &-srok {
          .srok {
             width: 100% !important;
+         }
+      }
+
+      &-reviews {
+         .reviews-carousel {
+            padding: 0 0 20px;
+         }
+
+         .review {
+            &-author {
+               padding: 5px 10px;
+            }
+
+            &-text {
+               margin: 5px 10px;
+            }
+
+            &-answer {
+               margin-right: 10px;
+            }
          }
       }
 
