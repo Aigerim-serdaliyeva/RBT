@@ -424,9 +424,7 @@ body {
             bottom: 27px;
             right: 100px;
             max-width: 420px;
-            // text-align: right;
             font-size: 16px;
-            // padding-right: -100px;
          }         
        }
     }
@@ -438,12 +436,17 @@ body {
        }
 
        .correct {
-         max-width: 360px;
+         // max-width: 360px;
+         width: 32%;
+         display: flex;
+         flex-direction: column;
          
          &-title {
             font-weight: normal;
             font-size: 16px;
             margin: 20px 0;
+            padding: 0 20px;
+            flex-grow: 1;
          }
 
          .button {

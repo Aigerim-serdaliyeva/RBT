@@ -25,18 +25,14 @@
 
 @media only screen and (max-width : 991px) {	
 
-    .form {
-       &-title {
-          font-size: 16px;
-          margin: 15px;
-       }
-        &-content {
-            justify-content: center;
-            .input-div {
-                margin: 0 15px 30px;
-            }
-        }
-    }
+   .form {
+      width: 100% !important;
+      margin: 0 auto;
+      form {
+         width: 100%;
+      }
+   }
+
 
     .hamburger {
         display: block;
@@ -54,10 +50,13 @@
 
     .footer {
         text-align: center;
-        &-content {
+        .grow {
+            display: none;
+         }
+        &-content {            
             flex-direction: column;
             & > * {
-               margin: 0 0 20px 0 !important;            
+               margin: 0 auto 20px !important;            
             }
             .vopros-button {
                margin: 0 !important;
@@ -83,7 +82,8 @@
 		ul {
 			display: block;
 			height: auto;
-			padding: 0;
+         padding: 0;
+         margin: 0;
 
 			li {
                 margin: 0 0 5px;
@@ -100,12 +100,38 @@
     }
 
    .section {
+
       &-srok {
          &-content {
             display: block;
+            height: auto;
+         }
+         .srok {
+            &-block {
+               width: 100%;
+            }
+            width: 48%;
+         }         
+      }
+
+      &-answers {
+         &-content {
+            flex-direction: column;
+         }
+         .answers {
+            width: 80%;
+            margin: 0 auto 20px;
+            &-title {
+               margin-bottom: 10px !important;
+            }
+            &-form {
+               width: 80%;
+               margin: 0 auto;
+            }
          }
       }
    }
+
 
    #thanks-page {
       .page-wrapper {
@@ -134,6 +160,7 @@
 
 }
 
+
 /* Small Devices, Tablets */
 @media only screen and (max-width : 767px) {
 
@@ -156,6 +183,24 @@
    .section {
       &-title {
          font-size: 27px;
+         margin-bottom: 25px;
+      }
+
+      &-reviews {
+         .review {
+            &-img {
+            }
+         }
+      }
+
+      &-correct {
+         &-content {
+            flex-direction: column;
+         }
+         .correct {
+            width: 360px;
+            margin: 0 auto 20px;
+         }
       }
       
    }
@@ -205,33 +250,37 @@
 
 }
 
+@media only screen and (max-width : 550px) {
+   .section {
+      &-srok {
+         .srok {
+            width: 360px !important;
+            margin: 0 auto 20px;
+            &-block {
+               flex-direction: column;
+            }
+         }
+      } 
+   }
+}
+
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 479px) {
 
   .remodal {
-    &.remodal-small {
-      padding: 25px 15px;
-    }
+    
   }
 
-
    .form {
-      width: 100%;
-      max-width: none;
-         .input-div, .button {
-            width: 100%;
-            margin: 0 0 10px;
-         }
+      &-title {
+         font-size: 16px;
+      }
    }
 
-    .button {
-        width: 100%;
-        min-width: auto;
-
-        &.button-large {
-            font-size: 16px;
-        }
-    }
+   //  .button {
+   //      width: 100%;
+   //      min-width: auto;
+   //  }
 
 	.col-xxs-12 {
 		width: 100%;
@@ -259,6 +308,61 @@
       &-title {
          font-size: 25px;
          margin-bottom: 20px;
+      }
+
+      &-why {
+         .why {
+            width: 100%
+         }
+      }
+
+      &-srok {
+         .srok {
+            width: 100% !important;
+         }
+      }
+
+      &-correct {
+         .correct {
+            max-width: 290px;
+         }
+      }
+
+      &-blog {
+         .blog {
+            margin: 0 auto;
+         }
+      }
+
+      &-answers {
+         .answers {
+            width: 100%;
+            &-form {
+               width: 100%;
+            }         
+         }           
+         .answer-button {
+            font-size: 16px;
+         } 
+         .form {
+            &-content {
+               flex-direction: column;
+            }
+            &-inputs {
+               width: 100%;
+               margin: 0 0 20px;
+            }
+            &-button {
+               flex-direction: column;
+            }
+            &-info {
+               margin-bottom: 10px;
+            }
+            .button {
+               width: 100%;
+            }
+         }
+         
       }
 
    }
