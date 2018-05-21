@@ -152,6 +152,10 @@
             flex-direction: column;
          }
          
+         .map {
+            width: 100%;
+            margin-bottom: 20px;
+         }
          .contact {
             width: 100%;
             &-block {
@@ -159,6 +163,19 @@
                   max-width: none;
                   margin: 0 auto 25px;
                }
+            }
+         }
+      }
+
+      &-sovet {
+         padding-top: 30px;
+         &-title {
+            font-size: 24px;
+            text-align: center;
+         }
+         .sovet {
+            span {
+               font-size: 16px;
             }
          }
       }
@@ -261,6 +278,19 @@
          .correct {
             width: 360px;
             margin: 0 auto 20px;
+         }
+      }
+
+      &-sovet {
+         &-content {
+            display: flex;
+            flex-direction: column;
+         }
+         .sovet {
+            &-img {
+               width: 360px;
+               margin: 0 auto 10px;
+            }
          }
       }
       
@@ -455,6 +485,14 @@
             
             &-text {
                margin-bottom: 10px;
+            }
+         }
+      }
+
+      &-sovet {
+         .sovet {
+            &-img {
+               width: 290px;
             }
          }
       }
