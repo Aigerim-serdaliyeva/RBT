@@ -13,8 +13,18 @@
       }
    }
 
+   .footer {
+      &-address {
+         display: none;
+      }
+   }
+
    .main-menu {
       margin-top: 0;
+      li {
+         white-space: nowrap;
+         margin-right: 20px;
+      }
    }
 
    .section {    
@@ -55,6 +65,9 @@
 
     .footer {
         text-align: center;
+        &-address {
+           display: block;
+        }
         .grow {
             display: none;
          }

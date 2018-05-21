@@ -95,7 +95,7 @@ body {
     background-color: $gray;
     color: #fff;
 
-    &-content {
+   &-content {
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
@@ -180,7 +180,7 @@ body {
     background-position: center center;
 
     &-title {
-      font-family: $title_family;
+      font-family: Fusion, serif;
       font-size: 30px;
       font-weight: normal;
       color: $title_color;
@@ -265,7 +265,7 @@ body {
 
          &-img {
             display: inline-block;
-            padding: 8px 12px;
+            padding: 0 12px;
             background-color: $accent;
             margin-bottom: 8px;
             font-size: 36px;
@@ -311,7 +311,7 @@ body {
             font-size: 30px;
             max-width: 336px;
             color: #fff;
-            font-family: Fusion;
+            font-family: Fusion, serif;
             font-weight: normal;
 
             span {
@@ -519,6 +519,7 @@ body {
             text-align: center;
             font-size: 30px;
             margin-bottom: 30px;
+            font-family: Fusion, serif;
          }
          &-block {
             padding: 20px 30px 45px;
