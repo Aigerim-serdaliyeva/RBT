@@ -68,7 +68,7 @@ body {
    }
 
    &-title {
-      font-weight: normal;
+      font-weight: 600;
       max-width: 230px;
       font-size: 14px;
       margin: -17px 0 0 53px;
@@ -82,7 +82,14 @@ body {
 
    &-grafik {
       margin-right: 60px;
+      font-weight: 600;
    }
+   &-phone {
+      a {
+         font-weight: 600;
+      }
+   }
+   
    .logo {
       margin-right: 30px;
    }
@@ -182,9 +189,10 @@ body {
     &-title {
       font-family: Fusion, serif;
       font-size: 30px;
+      letter-spacing: -2px;
       font-weight: normal;
       color: $title_color;
-      margin: 0 auto 40px;
+      margin: 0 auto 30px;
       text-align: center;
 
       .inverse & {
@@ -202,10 +210,10 @@ body {
       }
 
       &-title {
-         font-size: 48px;
+         font-size: 46px;
          font-weight: normal;
          text-align: left;
-         letter-spacing: -2px;
+         letter-spacing: -1px;
          color: $accent;
          font-family: Fusion, serif;
          
@@ -229,7 +237,10 @@ body {
             content: "";
             position: absolute;
             background-image: url('../img/main-back.jpg');
-            background-size: cover;
+            background-position: right center;
+            // background-size: cover;
+            // background-size: contain;            
+            // background-repeat: no-repeat;
             top: 0;
             left: calc(-50vw + 570px);
             bottom: 0;
@@ -240,7 +251,7 @@ body {
 
       .form {
          width: 37%;
-         padding-top: 75px;
+         padding-top: 65px;
       }
 
     }
@@ -258,7 +269,7 @@ body {
 
          &-title {
             font-size: 30px;
-            padding: 30px 20px;
+            padding: 20px 20px;
             font-family: Fusion, serif;
             font-weight: normal;
          }
@@ -269,6 +280,7 @@ body {
             background-color: $accent;
             margin-bottom: 8px;
             font-size: 36px;
+            font-family: Fusion, serif;
             color: #fff;
          }
          
@@ -325,6 +337,10 @@ body {
          .button {
             position: absolute;
             bottom: 42px;
+            &:active {
+               top: auto;
+               bottom: 41px;;
+            }
          }
        }
        .srok-1 {
@@ -342,6 +358,9 @@ body {
     }
 
     &-marka {
+      .section-title {
+         margin-bottom: 0;
+      }
       .marka-carousel {
          padding: 0 30px;  
       }
@@ -621,6 +640,7 @@ body {
        &-title {
           font-size: 30px;
           margin-bottom: 30px;
+          font-family: Fusion, serif;
        }
 
        &-link {
@@ -661,8 +681,10 @@ body {
       .form2 {
          background-color: $accent;
          padding: 10px 40px;
-         max-width: 980px;
+         text-align: center;
+         max-width: 870px;
          margin: 35px auto 20px;
+         color: #fff;
       }
      
     }
@@ -683,7 +705,7 @@ body {
 
    .section-thanks {
       background-image: url('../img/thanks-back.jpg');
-      padding: 150px 0 0 0;
+      padding: 130px 0 0 0;
       flex-grow: 1;
       text-align: left;
    
@@ -705,6 +727,8 @@ body {
 
       &-text {
          font-size: 30px;
+         font-family: Fusion, serif;
+         letter-spacing: -1px;
          color: $accent;
          background-color: #fff;
          margin-bottom: 3px;
@@ -821,9 +845,11 @@ body {
 
             &-1, &-1 + .more-num {
                top: 15px;
+               max-width: 185px;
             }
             &-2, &-2 + .more-num {
                top: 85px;
+               max-width: 255px;
             }
             &-3, &-3 + .more-num {
                top: 170px;

@@ -45,7 +45,7 @@
                   <a href="tel:+77780999346" class="text-phone">+7 778 099-93-46</a> <br>
                   <a href="tel:+77073499936" class="text-phone">+7 707 349-99-36</a>
                </div>
-               <a href="#" class="button" data-remodal-target="zvonok-modal">Заказать обратный звонок</a>               
+               <a href="#" class="button" data-remodal-target="zvonok-modal-obratnyi">Заказать обратный звонок</a>               
                
                <button class="hamburger hamburger--elastic hamburger--accessible">
                   <span class="hamburger-box">
@@ -109,7 +109,7 @@
                   <a href="tel:+77073499936" class="text-phone">+7 707 349-99-36</a>
                </div>
                
-               <a href="#" class="button button-white" data-remodal-target="zvonok-modal">Заказать обратный звонок</a>
+               <a href="#" class="button button-white" data-remodal-target="zvonok-modal-obratnyi">Заказать обратный звонок</a>
 
                <div class="footer-comand">
                   <div class="footer-comand-title">Создано командой</div>
@@ -125,23 +125,33 @@
 		
 	</div>
 	
-	<div class="remodal remodal-small" data-remodal-id="zvonok-modal" data-remodal-options="hashTracking: false">
-		<button data-remodal-action="close" class="remodal-close"></button>
-		
-			<h5 class="form-title">Оставьте заявку, наш менеджер свяжется с Вами в ближайшее время</h5>
-			<form action="">
-			  <input type="hidden" name="info" value="Оставить заявку">
-				<div class="input-div">
-				  <input type="text" class="input" name="Ваше имя" placeholder="Ваше имя">
-				</div>
-				<div class="input-div">
-				  <input type="tel" class="input" name="Номер телефона" placeholder="Номер телефона*" required>
-				  <span class="error-message">Заполните это поле</span>
-				</div>
-				<button class="button ajax-submit" type="submit" id="modal_ostavit_zaiavku">Оставить заявку</button>
-			</form>
+   
+   <div class="remodal remodal-small modal" data-remodal-id="zvonok-modal-obratnyi" data-remodal-options="hashTracking: true">
+      <button data-remodal-action="close" class="remodal-close"></button>
 
-	  </div>
+      <div class="modal-title">
+            Закажите обратный звонок, <br>
+            и наш дежурный мастер свяжется с Вами  
+      </div>
+      
+      <form action="/mail.php" method="post">
+         <input type="hidden" name="info" value="Заказать звонок">
+         <div class="input-div">
+            <img src="./img/name-icon.png" alt="" class="form-icon">
+            <input type="text" class="input" name="name" placeholder="Имя">
+         </div>
+         <div class="input-div">
+            <img src="./img/phone-icon.png" alt="" class="form-icon">
+            <input type="tel" class="input" name="phone" placeholder="Номер телефона*" required>
+            <span class="error-message">Заполните это поле</span>
+         </div>
+
+         <button class="button ajax-submit button-white" type="submit" id="polu4it_besplatnuw_diagnostiku">заказать обратный звонок</button>
+
+         <div class="form-info">*Ваши данные в безопасности и не будут переданы третьим лицам</div>
+      </form>
+
+   </div>
 										
 	<link rel="stylesheet" href="./css/libs.min.css">
 	<link rel="stylesheet" href="./css/main.min.css">

@@ -2,6 +2,13 @@
 <html lang="ru">
 
 <head>
+   <!-- Google Tag Manager -->
+   <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+   new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+   j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+   'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+   })(window,document,'script','dataLayer','GTM-KGHSHW7');</script>
+   <!-- End Google Tag Manager -->
 	<meta charset="utf-8">
 
 	<title>Ремонт бытовой техники в Алматы</title>
@@ -19,6 +26,10 @@
 </head>
 
 <body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KGHSHW7"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
 
     <div class="page-wrapper">
 
@@ -46,7 +57,7 @@
                      <a href="tel:+77780999346" class="text-phone">+7 778 099-93-46</a> <br>
                      <a href="tel:+77073499936" class="text-phone">+7 707 349-99-36</a>
                   </div>
-                  <a href="#" class="button" data-remodal-target="zvonok-modal">Заказать обратный звонок</a>               
+                  <a href="#" class="button" data-remodal-target="zvonok-modal-obratnyi">Заказать обратный звонок</a>               
                   
                   <button class="hamburger hamburger--elastic hamburger--accessible">
                      <span class="hamburger-box">
@@ -102,8 +113,7 @@
 
                      <div class="input-div">
                         <img src="./img/address-icon.png" alt="" class="form-icon">
-                        <input type="email" class="input" name="" placeholder="Куда нам приехать?" required>
-                        <span class="error-message">Заполните это поле</span>
+                        <input type="email" class="input" name="" placeholder="Куда нам приехать?">
                      </div>
 
                      <div class="input-div">
@@ -181,19 +191,19 @@
                <div class="srok-block">
                   <div class="srok srok-1">
                      <h3 class="srok-title"><span>Холодильники</span></h3>
-                     <button class="button button-white">Заказать бесплатную диагностику</button>
+                     <button class="button button-white" data-remodal-target="zvonok-modal">Заказать бесплатную диагностику</button>
                   </div>
                   <div class="srok srok-2">
                      <h3 class="srok-title"><span>Стиральные машины</span></h3>
-                     <button class="button button-white">Заказать бесплатную диагностику</button>
+                     <button class="button button-white" data-remodal-target="zvonok-modal">Заказать бесплатную диагностику</button>
                   </div>
                   <div class="srok srok-3">
                      <h3 class="srok-title"><span>Посудомоечные машины</span></h3>
-                     <button class="button button-white">Заказать бесплатную диагностику</button>
+                     <button class="button button-white" data-remodal-target="zvonok-modal">Заказать бесплатную диагностику</button>
                   </div>
                   <div class="srok srok-4">
                      <h3 class="srok-title"><span>Торговое холодильное</span> <span>оборудование</span></h3> 
-                     <button class="button button-white">Заказать бесплатную диагностику</button>
+                     <button class="button button-white" data-remodal-target="zvonok-modal">Заказать бесплатную диагностику</button>
                   </div>
                </div>
 
@@ -212,8 +222,7 @@
 
                      <div class="input-div">
                         <img src="./img/address-icon.png" alt="" class="form-icon">
-                        <input type="email" class="input" name="" placeholder="Куда нам приехать?" required>
-                        <span class="error-message">Заполните это поле</span>
+                        <input type="email" class="input" name="" placeholder="Куда нам приехать?">
                      </div>
 
                      <div class="input-div">
@@ -424,7 +433,7 @@
                            <a href="tel:+77073499936" class="text-phone">+7 707 349-99-36</a>
                         </div>
                         <div class="contact-text">Либо</div>
-                        <button class="button button-white">Заказать обратный звонок</button>
+                        <button class="button button-white" data-remodal-target="zvonok-modal-obratnyi">Заказать обратный звонок</button>
                      </div>
                      <div class="contact-block-title">Мы расположены по адресу:</div>
                      <div class="contact-block-text">Казахстан, г. Алматы, ул. Бердыгулова 1 "А"</div>                     
@@ -533,7 +542,7 @@
                   <a href="tel:+77073499936" class="text-phone">+7 707 349-99-36</a>
                </div>
                
-               <a href="#" class="button button-white" data-remodal-target="zvonok-modal">Заказать обратный звонок</a>
+               <a href="#" class="button button-white" data-remodal-target="zvonok-modal-obratnyi">Заказать обратный звонок</a>
 
                <div class="footer-comand">
                   <div class="footer-comand-title">Создано командой</div>
@@ -572,6 +581,33 @@
 
         <div class="form-info">*Ваши данные в безопасности и не будут переданы третьим лицам</div>
      </form>
+
+   </div>
+
+   <div class="remodal remodal-small modal" data-remodal-id="zvonok-modal-obratnyi" data-remodal-options="hashTracking: true">
+      <button data-remodal-action="close" class="remodal-close"></button>
+
+      <div class="modal-title">
+            Закажите обратный звонок, <br>
+            и наш дежурный мастер свяжется с Вами  
+      </div>
+      
+      <form action="/mail.php" method="post">
+         <input type="hidden" name="info" value="Заказать звонок">
+         <div class="input-div">
+            <img src="./img/name-icon.png" alt="" class="form-icon">
+            <input type="text" class="input" name="name" placeholder="Имя">
+         </div>
+         <div class="input-div">
+            <img src="./img/phone-icon.png" alt="" class="form-icon">
+            <input type="tel" class="input" name="phone" placeholder="Номер телефона*" required>
+            <span class="error-message">Заполните это поле</span>
+         </div>
+
+         <button class="button ajax-submit button-white" type="submit" id="polu4it_besplatnuw_diagnostiku">заказать обратный звонок</button>
+
+         <div class="form-info">*Ваши данные в безопасности и не будут переданы третьим лицам</div>
+      </form>
 
    </div>
      
