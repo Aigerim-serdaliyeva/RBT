@@ -144,6 +144,10 @@ body {
 .main-menu {   
    background-color: rgba(3, 94, 133, 0.5);
 
+   #sovet-page & {
+      background-color: $accent;
+   }
+
    ul {
       list-style: none;
       display: flex;
@@ -238,9 +242,6 @@ body {
             position: absolute;
             background-image: url('../img/main-back.jpg');
             background-position: right center;
-            // background-size: cover;
-            // background-size: contain;            
-            // background-repeat: no-repeat;
             top: 0;
             left: calc(-50vw + 570px);
             bottom: 0;
@@ -264,15 +265,13 @@ body {
           align-items: flex-start;
        }
 
+       .section-title {
+         padding: 20px 20px;
+         margin: 0;
+       }
+
        .why {
          margin: 0 20px 30px;
-
-         &-title {
-            font-size: 30px;
-            padding: 20px 20px;
-            font-family: Fusion, serif;
-            font-weight: normal;
-         }
 
          &-img {
             display: inline-block;
@@ -944,6 +943,7 @@ body {
             }
             &-5, &-5 + .more-num {
                top: 35px;
+               margin-left: 180px;
             }
             &-6, &-6 + .more-num {
                top: 120px;
