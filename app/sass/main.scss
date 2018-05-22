@@ -237,7 +237,9 @@ body {
             content: "";
             position: absolute;
             background-image: url('../img/main-back.jpg');
-            background-size: cover;
+            // background-size: cover;
+            background-size: contain;
+            background-repeat: no-repeat;
             top: 0;
             left: calc(-50vw + 570px);
             bottom: 0;
