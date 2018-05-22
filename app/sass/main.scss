@@ -84,9 +84,12 @@ body {
       margin-right: 60px;
       font-weight: 600;
    }
-   a {
-      font-weight: 600;
+   &-phone {
+      a {
+         font-weight: 600;
+      }
    }
+   
    .logo {
       margin-right: 30px;
    }
