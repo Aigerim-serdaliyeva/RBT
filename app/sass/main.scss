@@ -268,7 +268,7 @@ body {
          font-weight: normal;
          text-align: left;
          letter-spacing: -1px;
-         color: $accent;
+         color: #fff;
          font-family: Fusion, serif;
          
          span {
@@ -276,7 +276,7 @@ body {
             margin: 0 0 10px 0;
             // background-color: #fff;
             &.red {
-               color: #d22800;
+               // color: #d22800;
             }
          }
       }
@@ -311,7 +311,7 @@ body {
          }
 
          &:after {
-            background-color: rgba(#fff, 0.6);
+            background-color: rgba(#000, 0.5);
          }
       }
 

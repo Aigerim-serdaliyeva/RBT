@@ -1,4 +1,7 @@
-new WOW().init();
+
+if (window.innerWidth > 479) {
+   new WOW().init();
+}
 
 $(document).ready(function() {
 
