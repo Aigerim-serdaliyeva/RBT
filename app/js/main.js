@@ -171,7 +171,14 @@ $(document).ready(function() {
          768: { items: 3 }
       },
       onInitialized: function() {
-         equalizeHeight('.blog-carousel', '.blog');
+         setTimeout(function() {
+            equalizeHeight('.blog-carousel', '.blog');
+         });
+      },
+      onChanged: function() {
+         setTimeout(function() {
+            equalizeHeight('.blog-carousel', '.blog');
+         });
       }
    });
 
