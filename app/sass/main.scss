@@ -40,6 +40,56 @@ body {
 	}
 }
 
+.call-me {
+   position: fixed;
+	bottom: 20px;
+	left: 20px;
+	z-index: 99;
+	cursor: pointer;
+   @include circle(50px);
+   background-color: #58ea00;
+   cursor: pointer;
+   display: none;
+
+   .fa {
+      color: #fff;
+      font-size: 25px;
+      position: relative;
+      top: 5px;
+   }
+
+   &:before,
+   &:after {
+      content: '';
+      position: absolute;
+      top: -15px;
+      left: -15px;
+      right: -15px;
+      bottom: -15px;
+      border: 1px solid #58ea00;
+      border-radius: 50%;
+      animation: pulse 1.5s linear infinite;
+   }
+
+   &:after {
+      animation-delay: 0.5;
+   }
+}
+
+@keyframes pulse {
+   0% {
+      opacity: 0;
+      transform: scale(0.5);
+   }
+   50% {
+      opacity: 1;
+   }
+   100% {
+      opacity: 0;
+      transform: scale(1);
+   }
+}
+
 .page-wrapper {
     overflow: hidden;
     min-height: 100vh;
@@ -224,7 +274,7 @@ body {
          span {
             display: inline-block;
             margin: 0 0 10px 0;
-            background-color: #fff;
+            // background-color: #fff;
             &.red {
                color: #d22800;
             }
@@ -237,6 +287,17 @@ body {
          z-index: 0;
          padding-top: 118px;
 
+         &::before,
+         &::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: calc(-50vw + 570px);
+            bottom: 0;
+            right: 0;
+            z-index: -1;
+         }
+
          &::before {
             content: "";
             position: absolute;
@@ -247,6 +308,10 @@ body {
             bottom: 0;
             right: 0;
             z-index: -1;
+         }
+
+         &:after {
+            background-color: rgba(#fff, 0.6);
          }
       }
 
