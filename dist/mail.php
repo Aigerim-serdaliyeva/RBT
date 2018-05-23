@@ -4,6 +4,7 @@ $method = $_SERVER['REQUEST_METHOD'];
 
 $project_name = "RBT Master";
 $admin_email  = "info@rbtmaster.kz, client@marketing-time.kz";
+#$server_mail = "<info@rbtmaster.kz>";
 $server_mail = "<info@rbtmaster.kz>";
 $form_subject = "Заявка";
 
